@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mod4-CourseProject</title>
+  </head>
+  <body>
+    <div id="firstdiv">
+
+      <h1>Module04-CourseProject</h1>
+    </div>
+
+    What kind if car do you have? <input type="text" name="userinput" id="userinput">
+
+      <button class="submitbutton" onclick="displayUserinput()">Submit!</button>
+    <br>
+    <br>
+      <div id="message">Your answer will be here</div>
+
+    <script>
+      function displayUserinput(){
+        var uservalue = document.getElementById('userinput').value;
+          document.getElementById('message').innerHTML = 'You have a: ' + uservalue;
+      }
+
+      let x = prompt("How many many windoes do you have?");
+      switch (true) {
+        case (x>8):
+        alert("This isn't possible");
+        break;
+        case (x<2):
+        alert("You may have damaged windows");
+        break;
+        case (x=0):
+        alert("Dont worry about this");
+        break;
+      }
+
+    </script>
+  </body>
+</html>
